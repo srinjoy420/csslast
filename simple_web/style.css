@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px 80px;
+    background-color: bisque;
+    margin-bottom: 40px;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+}
+.buttons {
+  display: flex;
+  gap: 15PX;
+
+}
+.buttons :hover{
+    background-color: #ddd;
+    transition: 0.2s ease;
+}
+.buttons button{
+    padding: 8PX 12PX;
+    border-radius: 10PX;
+    border: none;
+    cursor: pointer;
+}
+.logo{
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.hero{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8%;
+    padding: 20px 80px;
+   
+}
+.leftsection h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.leftsection p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.leftsection button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.leftsection button:hover{
+    background-color: #45a049;
+}
+.rightsection img{
+    object-fit: cover;
+}
+.rightsection img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    rotate: 10deg;
+}
+.clint{
+  text-align:center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.clintlist{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .clintlist {
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        flex-direction: column;
+    }
+} 
+
+
+.card{
+    background-color: bisque;
+    padding: 20px 35px;
+    border-radius: 20px;
+}
+.card h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+
+}
+.card img{
+    border-radius: 50%;
+
+}
+.main{
+    text-align: center;
+    margin-top: 20px;
+    
+
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    background-color: rgb(23, 42, 42);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    padding: 20px 80px;
+    border: 2px solid;
+}
+.basic:nth-child(2) {
+    background-color: pink;
+}
+.basic ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.basic{
+    padding: 15px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 14px;
+}
+.basic:hover{
+    background-color: #1e90ff;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
